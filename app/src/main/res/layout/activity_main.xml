@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+
+        android:orientation="vertical"> //penempatan
+
+
+    <TextView
+            android:id="@+id/nama_angka1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masukkan angka 1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+            android:id="@+id/input_satu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:inputType="number"/>
+
+    <TextView
+            android:id="@+id/nama_angka2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masukkan angka 2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+            android:id="@+id/input_dua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:inputType="number"/>
+
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:layout_gravity="center"
+                  android:layout_marginTop="20dp"
+    android:orientation="horizontal">
+        <Button
+                android:id="@+id/button_tambah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tambah"
+                android:textAllCaps="false"
+                android:gravity="center"/>
+
+        <Button
+                android:id="@+id/button_kurang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="kurang"
+                android:gravity="center"/>
+
+        <Button
+                android:id="@+id/button_kali"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="kali"
+                android:gravity="center"/>
+
+        <Button
+                android:id="@+id/button_bagi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="bagi"
+                android:gravity="center"/>
+
+    </LinearLayout>
+
+
+    <TextView
+            android:id="@+id/hasil_hitung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="true"
+            android:text="hasil hitung"
+            android:gravity="center"/>
+</LinearLayout>
